@@ -1,5 +1,18 @@
+.clk {
+text-align: center;
+background-color: black;
+margin-left: 11em;
+font-size: 53px;
+border-radius: 25px;
+}
+
+
+
+
 .bannerParentDiv {
-    padding-top: 4em;
+    padding-top: 0em;
+    /* width: 100px;
+    height: 100%; */
   } 
   
   .bannerParentDiv .bannerChildDiv .menuBar {

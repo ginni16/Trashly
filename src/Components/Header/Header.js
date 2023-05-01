@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import { AllPostContext } from "../../contextStore/AllPostContext";
 import { PostContext } from "../../contextStore/PostContext";
 import "./Header.css";
-import OlxLogo from "../../assets/OlxLogo";
+// 
 import SearchIcon from "../../assets/SearchIcon"
 import Arrow from "../../assets/Arrow";
 import SellButton from "../../assets/SellButton";
@@ -56,7 +56,8 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
-          <OlxLogo></OlxLogo>
+          {/* <OlxLogo></OlxLogo> */}
+          <h1 style={{color: "white"}}>Trash.Ly</h1>
         </div>
         <div className="placeSearch">
           <input type="text" 
@@ -86,7 +87,7 @@ function Header() {
         </div>
         
         <div className="language">
-          <span> ENGLISH </span>
+          <span style={{color: "white"}}> ENGLISH </span>
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
@@ -94,13 +95,13 @@ function Header() {
             user.displayName
           ) : (
             <Link to="/login">
-              <span>Login</span>
+              <span style={{color: "white"}}>Login</span>
             </Link>
           )}
           <hr />
         </div>
         {user && (
-          <span onClick={logoutHandler} className="logout-span">
+          <span style={{color: "white"}} onClick={logoutHandler} className="logout-span">
             Logout
           </span>
         )}

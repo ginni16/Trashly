@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router , Route} from 'react-router-dom'
 import Home from '../Pages/Home'
+import Trash from '../Pages/trash'
 import Signup from '../Pages/Signup'
 import Login from '../Pages/Login'
 import CreatePost from '../Pages/CreatePost'
@@ -13,7 +14,10 @@ import ViewMore from '../Pages/ViewMore'
 function MainRoutes() {
     return (
        <Router>
-           <Route exact path="/">
+        <Route exact path="/">
+               <Trash/>
+               </Route>
+           <Route exact path="/Home">
                <Home/>
            </Route>
            <Route path="/signup">

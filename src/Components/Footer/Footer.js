@@ -25,16 +25,16 @@ function Footer() {
           </div>
           <div className="list">
             <ul>
-              <li>About OLX Group</li>
+              <li>About TrashLy Group</li>
               <li>Careers</li>
               <li>Contact Us</li>
-              <li>OLXPeople</li>
+              <li>TRASHLYPeople</li>
             </ul>
           </div>
         </div>
         <div>
           <div className="heading">
-            <p>OLX</p>
+            <p>TrashLy</p>
           </div>
           <div className="list">
             <ul>
@@ -47,7 +47,7 @@ function Footer() {
       </div>
       <div className="footer">
         <p>Other Countries Pakistan - South Africa - Indonesia</p>
-        <p>Free Classifieds in India. © 2006-2021 OLX</p>
+        <p>Free Classifieds in India. © 2006-2021 TrashLy</p>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import DynamicPosts from "../DynamicPosts/DynamicPosts";
+import { Link } from "react-router-dom";
 
 import "./Banner.css";
 
-function Banner() {
+function Banner1() {
   let [category, setCategory] = useState();
   
   return (
@@ -11,7 +12,7 @@ function Banner() {
       <div className="bannerChildDiv">
         <div className="menuBar">
           <div className="categoryMenu">
-            <select
+            {/* <select
               name="Category"
               onChange={(e) => {
                 setCategory(e.target.value);
@@ -25,24 +26,33 @@ function Banner() {
               <option value="Mobile Phones">Mobile Phones</option>
               <option value="Motorcycles">Motorcycles</option>
               <option value="Tablets">Tablets</option>
-            </select>
+            </select> */}
           </div>
-          <div className="otherQuickOptions">
+          {/* <div className="otherQuickOptions">
             <span onClick={()=>setCategory("Cars")} >Cars</span>
             <span onClick={()=>setCategory("Cameras & Lenses")} >Cameras & Lenses</span>
             <span onClick={()=>setCategory("Computers & Laptops")} >Computers & Laptops</span>
             <span onClick={()=>setCategory("Mobile Phones")} >Mobile Phones</span>
             <span onClick={()=>setCategory("Motorcycles")} >Motorcycles</span>
             <span onClick={()=>setCategory("Tablets")} >Tablets</span>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         <div className="banner">
-          <img src="../../../Images/banner copy1.png" alt="" />
-        </div>
+          <img src="../../../Images/pic2.png" alt=""  />
+          <Link className="clk" to="/Home">Click Here !!</Link>
+
+          </div>
+{/* 
+          <div class="container">
+  <img src="../../../Images/pic2.jpeg" alt="Snow"/>
+  <button class="btn">Button</button>
+</div> */}
+       
       </div>
      { category!=null && <DynamicPosts category={category}/>  }
+    </div>
     </div>
   );
 }
 
-export default Banner;
+export default Banner1;
